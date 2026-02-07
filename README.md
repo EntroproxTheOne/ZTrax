@@ -1,4 +1,13 @@
-# ShadowTrace - OSINT Digital Footprint Finder
+# ZTrack - OSINT Digital Footprint Finder
+
+```text
+███████╗████████╗██████╗  █████╗  ██████╗██╗  ██╗
+╚══███╔╝╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██║ ██╔╝
+  ███╔╝    ██║   ██████╔╝███████║██║     █████╔╝ 
+ ███╔╝     ██║   ██╔══██╗██╔══██║██║     ██╔═██╗ 
+███████╗   ██║   ██║  ██║██║  ██║╚██████╗██║  ██╗
+╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
+```
 
 A powerful Linux shell script for finding usernames across 90+ platforms, checking data breaches, and removing your digital footprint.
 
@@ -14,13 +23,13 @@ A powerful Linux shell script for finding usernames across 90+ platforms, checki
 
 ```bash
 # Clone or copy the script
-chmod +x shadowtrace.sh
+chmod +x ztrack.sh
 
 # Install dependencies (Debian/Ubuntu)
 sudo apt install curl jq parallel
 
 # Run
-./shadowtrace.sh
+./ztrack.sh
 ```
 
 ## Usage
@@ -28,26 +37,26 @@ sudo apt install curl jq parallel
 ### Interactive Mode
 
 ```bash
-./shadowtrace.sh
+./ztrack.sh
 ```
 
 ### Command Line
 
 ```bash
 # Username search
-./shadowtrace.sh -u johndoe
+./ztrack.sh -u johndoe
 
 # Email breach check
-./shadowtrace.sh -e john@example.com
+./ztrack.sh -e john@email.com
 
 # Password breach check (secure - uses k-anonymity)
-./shadowtrace.sh -p "mypassword123"
+./ztrack.sh -p "mypassword123"
 
 # Google dork queries
-./shadowtrace.sh -g johndoe
+./ztrack.sh -g johndoe
 
 # Generate GDPR removal request
-./shadowtrace.sh --generate-gdpr "John Doe" "john@email.com" "Facebook Inc"
+./ztrack.sh --generate-gdpr "John Doe" "john@email.com" "Facebook Inc"
 ```
 
 ## Platforms Checked
